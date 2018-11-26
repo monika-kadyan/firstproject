@@ -36,7 +36,4 @@
         }
     }
   },
-  "jest": {
-    "preset": "react-native"
   }
-}
