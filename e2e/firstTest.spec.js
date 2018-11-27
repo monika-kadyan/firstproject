@@ -1,5 +1,9 @@
-const sum = require('./sum');
+describe('Matchers', () => {
+  beforeEach(async () => {
+    await device.reloadReactNative();
+   });
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+  it('should match elements by (accesibility) label', async () => {
+    await expect(element(by.text('Hello World!'))).toBeVisible();
+  });
 });
